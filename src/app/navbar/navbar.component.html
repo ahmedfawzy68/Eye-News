@@ -1,0 +1,83 @@
+<section>
+    <nav class="navbar navbar-expand-lg py-2">
+        <div class="container">
+            <i (click)="toggleMenu()" [class]="isOpened? 'fa-xmark' : 'fa-bars'" class="fa-solid me-5 menu-icon"></i>
+            <a class="navbar-brand" routerLink="/">Eye News</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-circle-chevron-down menu-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ng-container *ngFor="let _ of [].constructor(3);">
+                        <li class="nav-item me-3">
+                            <a class="nav-link">World</a>
+                        </li>
+                        <li class="nav-item me-2 dropdown">
+                            <a class="nav-link dropdown-toggle custom-dropdown-toggle" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown <i class="fa-solid fa-angle-down ms-1"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">Action</a></li>
+                                <li><a class="dropdown-item">Another action</a></li>
+                            </ul>
+                        </li>
+                    </ng-container>
+
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-3">
+                        <a class="nav-link">Watch</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link">TV</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link">TV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div *ngIf="isOpened" class="overLayer pb-5">
+        <div class="container pb-5 border-bottom border-1 border-white mt-5">
+            <form>
+                <div class="input-container position-relative">
+                    <input type="text" placeholder="Search Eye News..." class="form-control py-2">
+                    <span class="search pointer">Search <i class="fa-solid fa-arrow-right-long ms-1"></i></span>
+                </div>
+            </form>
+            <div
+                class="d-flex flex-wrap align-items-center py-4 gap-lg-5 gap-3 border-bottom border-1 border-white">
+                <h4 class="my-auto pointer">Edition</h4>
+                <p class="my-auto pointer">Eye</p>
+                <p class="my-auto pointer">International</p>
+                <p class="my-auto pointer">Arabic</p>
+                <p class="my-auto pointer">French</p>
+            </div>
+            <div class="row py-4">
+                <div class="col-lg-2 col-md-3 col-4 mb-5" *ngFor="let _ of [].constructor(14);">
+                    <h4 class="mb-3 pointer">Edition</h4>
+                    <p class="mb-2 pointer">International</p>
+                    <p class="mb-2 pointer">Arabic</p>
+                    <p class="mb-2 pointer">French</p>
+                    <p class="mb-2 pointer">International</p>
+                    <p class="mb-2 pointer">Arabic</p>
+                    <p class="mb-2 pointer">French</p>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 text-center">
+            <h4>Follow Eye News</h4>
+            <div class="social-media d-flex gap-5 justify-content-center mt-4">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+</section>

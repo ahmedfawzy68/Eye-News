@@ -1,0 +1,55 @@
+:root {
+    --dark-blue: #000033;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+}
+
+.pointer,
+a {
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.form-control {
+    border: none !important;
+}
+
+.form-control:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+ul {
+    padding-left: 1.5rem !important;
+}
+
+.border-custom {
+    border-color: #6e6e6e;
+}
+
+.more h6 {
+    font-weight: 700;
+    position: relative;
+}
+
+.more h6::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 16px;
+    height: 4px;
+    background-color: var(--dark-blue);
+}
+
+
+@media (min-width: 1400px) {}
+
+.container {
+    max-width: 1420px !important;
+}

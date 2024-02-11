@@ -1,0 +1,47 @@
+<section>
+    <div class="container border-bottom border-1 border-white mt-5">
+        <form>
+            <div class="input-container position-relative">
+                <input type="text" placeholder="Search Eye News..." class="form-control py-2">
+                <span class="search pointer">Search <i class="fa-solid fa-arrow-right-long ms-1"></i></span>
+            </div>
+        </form>
+        <div class="row py-4">
+            <div class="col-lg-2 col-md-3 col-4 mb-5" *ngFor="let _ of [].constructor(14);">
+                <h4 class="mb-3 pointer">Edition</h4>
+                <p class="mb-2 pointer">International</p>
+                <p class="mb-2 pointer">Arabic</p>
+                <p class="mb-2 pointer">French</p>
+                <p class="mb-2 pointer">International</p>
+                <p class="mb-2 pointer">Arabic</p>
+                <p class="mb-2 pointer">French</p>
+            </div>
+        </div>
+        <div
+            class="d-flex flex-wrap justify-content-between align-items-center border-top border-bottom border-1 border-custom py-4">
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+                <a routerLink="/">Eye News</a>
+                <a>US</a>
+            </div>
+            <div class="d-flex flex-wrap gap-5 align-items-center social-media">
+                <h6 class="m-0">Follow Eye News</h6>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-3 my-3">
+            <a>Terms of Use</a>
+            <a>Privacy Policy</a>
+            <a>Cookie Settings</a>
+            <a>Ad Choices</a>
+            <a>Accessibility & CC</a>
+            <a>About</a>
+            <a>Newsletters</a>
+            <a>Transcripts</a>
+        </div>
+        <p>Copyright {{currentYear}} Eye News | All Rights Reserved</p>
+    </div>
+</section>

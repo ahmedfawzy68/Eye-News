@@ -1,0 +1,24 @@
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.time-zone {
+    color: #6e6e6e;
+}
+
+.limit {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.more .border-custom:last-child {
+    border-bottom: unset !important;
+}
+
+p span{
+    font-weight: 700;
+}

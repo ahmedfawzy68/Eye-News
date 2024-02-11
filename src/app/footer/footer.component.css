@@ -1,0 +1,31 @@
+section {
+    background-color: var(--dark-blue);
+    min-height: calc(100vh - 56px);
+    padding-top: 10px;
+}
+
+.search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+section * {
+    color: #fff;
+}
+
+section form * {
+    color: var(--dark-blue) !important;
+}
+
+.social-media i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h6 {
+    font-weight: 700;
+}

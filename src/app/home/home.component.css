@@ -1,9 +1,7 @@
 * {
     color: var(--dark-blue);
 }
-img{
-    cursor: pointer;
-}
+
 .home-menus p {
     font-weight: 500;
     border-right: 2px solid #ccc;
@@ -17,11 +15,13 @@ img{
 .home-menus p:last-child {
     border-right: none;
 }
-.main-news h1{
+
+.main-news h1 {
     font-size: 46px;
     font-weight: 700;
 }
-.main-news h3{
+
+.main-news h3 {
     font-size: 20px;
     font-weight: 700;
 }
